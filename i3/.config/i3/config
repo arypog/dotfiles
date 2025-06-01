@@ -58,7 +58,7 @@ bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Return move position center, move left, focus left
 
 # PowerMenu
-bindsym $mod+Shift+m exec --no-startup-id ~/.local/bin/powermenu.sh
+bindsym $mod+Shift+m exec --no-startup-id ~/.local/scripts/powermenu.sh
 
 # start a terminal
 bindsym $mod+Shift+Return exec alacritty
