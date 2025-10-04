@@ -1,7 +1,9 @@
 general.import = [
    #"~/.config/alacritty/catppuccin-frappe.toml"
-   "~/.config/alacritty/rose-pine.toml"
+   #"~/.config/alacritty/rose-pine.toml"
    #"~/.config/alacritty/gruvbox.toml"
+   #"~/.config/alacritty/ashen.toml"
+   "~/.config/alacritty/kanagawa-dragon.toml"
 ]
 
 [env]
@@ -17,8 +19,7 @@ x = 0
 y = 0
 
 [font]
-size = 22
-#size = 25
+size = 16
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"

@@ -25,3 +25,17 @@ vim.opt.isfname:append("@-@")
 vim.opt.colorcolumn = "80"
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
+
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    -- Disable line wrapping entirely
+    vim.opt_local.wrap = false           -- No automatic wrapping
+    vim.opt_local.textwidth = 80         -- Set text width limit to 80 characters
+    vim.opt_local.linebreak = true       -- Break lines at spaces (not in words)
+    vim.opt_local.colorcolumn = "80"     -- Show visual column at 80 chars
+
+    vim.api.nvim_buf_set_keymap(0, 'i', '<CR>', '<Esc>o<Tab>', { noremap = true, silent = true })
+  end
+})

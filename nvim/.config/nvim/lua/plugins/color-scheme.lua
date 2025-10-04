@@ -43,7 +43,7 @@ return  {
     name = "rose-pine",
     config = function()
       require("rose-pine").setup({ disable_background = true })
-      vim.cmd("colorscheme rose-pine")
+      -- vim.cmd("colorscheme rose-pine")
     end,
   },
   {
@@ -53,11 +53,19 @@ return  {
       require('kanagawa').setup({
         transparent = true,         -- do not set background color
       })
-      -- vim.cmd("colorscheme kanagawa")
+      -- vim.cmd("colorscheme kanagawa-dragon")
 
     end,
   },
-  -- vim.cmd.colorscheme "catppuccin",
-  -- vim.cmd("colorscheme tokyonight")
-  -- vim.cmd("colorscheme gruvbox")
+  {
+    "ficcdaf/ashen.nvim",
+    priority = 1000,
+    lazy = false,
+    config = function()
+      require("ashen").setup({
+        transparent = true,         -- do not set background color
+      })
+      vim.cmd("colorscheme ashen")
+    end,
+  },
 }
