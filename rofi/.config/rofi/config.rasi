@@ -1,0 +1,8 @@
+
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+configuration {
+//	show-icons: true;
+}
+
+@theme "/home/ary/.config/rofi/themes/red.rasi"
